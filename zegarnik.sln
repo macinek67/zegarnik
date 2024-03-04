@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zegarnik.Android", "zegarnik\zegarnik.Android\zegarnik.Android.csproj", "{01AAFA6B-DF92-4D74-8F63-C0A940A19650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zegarnik", "zegarnik\zegarnik\zegarnik.csproj", "{A125E746-391D-421F-A0E0-A3C3FE57F095}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01AAFA6B-DF92-4D74-8F63-C0A940A19650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01AAFA6B-DF92-4D74-8F63-C0A940A19650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01AAFA6B-DF92-4D74-8F63-C0A940A19650}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{01AAFA6B-DF92-4D74-8F63-C0A940A19650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01AAFA6B-DF92-4D74-8F63-C0A940A19650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01AAFA6B-DF92-4D74-8F63-C0A940A19650}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A125E746-391D-421F-A0E0-A3C3FE57F095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A125E746-391D-421F-A0E0-A3C3FE57F095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A125E746-391D-421F-A0E0-A3C3FE57F095}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A125E746-391D-421F-A0E0-A3C3FE57F095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A125E746-391D-421F-A0E0-A3C3FE57F095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A125E746-391D-421F-A0E0-A3C3FE57F095}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD5E72BD-9A4A-4A95-86EA-0538F94711A8}
+	EndGlobalSection
+EndGlobal
