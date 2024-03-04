@@ -12,6 +12,7 @@ namespace zegarnik
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class mainTabbed : TabbedPage
     {
+        List<Alarm> alarmy = new List<Alarm>();
         public mainTabbed()
         {
             InitializeComponent();

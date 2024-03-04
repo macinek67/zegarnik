@@ -11,9 +11,16 @@
             <Label x:Name="dateLabel" Text="04 March 2024" HorizontalOptions="Center" TextColor="White" FontSize="20"/>
         </StackLayout>
     </ContentPage>
+    
     <ContentPage Title="alarm">
-        
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="175">
+            <Entry Placeholder="Tytul:" TextColor="White"/>
+            <Entry Placeholder="Opis:" TextColor="White"/>
+            <TimePicker TextColor="white"/>
+            <Button Text="Ustaw alarm" CornerRadius="25" FontAttributes="Bold"/>
+        </StackLayout>
     </ContentPage>
+    
     <ContentPage Title="minutnik">
         
     </ContentPage>
