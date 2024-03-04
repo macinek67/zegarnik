@@ -14,10 +14,10 @@
     
     <ContentPage Title="alarm">
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="175">
-            <Entry Placeholder="Tytul:" TextColor="White"/>
-            <Entry Placeholder="Opis:" TextColor="White"/>
-            <TimePicker TextColor="white"/>
-            <Button Text="Ustaw alarm" CornerRadius="25" FontAttributes="Bold"/>
+            <Entry x:Name="titleEntry" Placeholder="Tytul:" TextColor="White"/>
+            <Entry x:Name="descriptionEntry" Placeholder="Opis:" TextColor="White"/>
+            <TimePicker x:Name="alarmDateTime" TextColor="white"/>
+            <Button x:Name="setAlarmButton" Text="Ustaw alarm" CornerRadius="25" FontAttributes="Bold" Clicked="setAlarmButton_Clicked"/>
         </StackLayout>
     </ContentPage>
     

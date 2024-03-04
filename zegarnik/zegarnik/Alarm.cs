@@ -9,10 +9,10 @@ namespace zegarnik
     {
         public string Tytul { get; set; }
         public string Opis { get; set; }
-        public DateTime KiedyZadzwonic { get; set; }
+        public TimeSpan KiedyZadzwonic { get; set; }
         public bool SprawdzCzyDzwonic()
         {
-            if(DateTime.Now == KiedyZadzwonic)
+            if ((KiedyZadzwonic - DateTime.Now.TimeOfDay).TotalSeconds < 0)
             {
                 return true;
             }
