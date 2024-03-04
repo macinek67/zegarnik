@@ -10,7 +10,7 @@ namespace zegarnik
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new mainTabbed());
         }
 
         protected override void OnStart()

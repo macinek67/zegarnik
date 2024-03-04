@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zegarnik.mainTabbed"
+            NavigationPage.HasNavigationBar="False" BarBackgroundColor="white" BackgroundColor="Gray" BarTextColor="Gray"
+            >
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="zegar">
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label x:Name="timeLabel" Text="08:51:35" TextColor="white" FontSize="45"/>
+            <Label x:Name="dateLabel" Text="04 March 2024" HorizontalOptions="Center" TextColor="White" FontSize="20"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="alarm">
+        
+    </ContentPage>
+    <ContentPage Title="minutnik">
+        
+    </ContentPage>
+</TabbedPage>
