@@ -42,6 +42,18 @@ namespace zegarnik
                         alarmy.Remove(alarm);
                     }
                 }
+
+                if (minutnik == Minutnik.nieustawiony) return;
+
+                time = time.Subtract(TimeSpan.Parse("00:00:01"));
+                WyswietlMinutnik();
+
+                if (time <= TimeSpan.Parse("00:00:00"))
+                {
+                    time = new TimeSpan();
+                    minutnik = Minutnik.nieustawiony;
+                    DisplayAlert("Minutnik", "Alarm!!!\nDoliczono do zera", "OK");
+                }
             });
         }
 
@@ -59,6 +71,32 @@ namespace zegarnik
             titleEntry.Text = "";
             descriptionEntry.Text = "";
             alarmDateTime.Time = DateTime.Now.TimeOfDay;
+        }
+
+        TimeSpan time = new TimeSpan();
+        enum Minutnik
+        {
+            nieustawiony,
+            ustawiony
+        }
+        Minutnik minutnik = new Minutnik();
+        private void saveTimeButton_Clicked(object sender, EventArgs e)
+        {
+            int minutes = int.Parse((timeEntry.Text).Split(':')[0]);
+            int hours = minutes / 60;
+            minutes = minutes % 60;
+
+            time = TimeSpan.Parse($"{hours}:{minutes}:00");
+            minutnik = Minutnik.ustawiony;
+
+            WyswietlMinutnik();
+
+            timeEntry.Text = "";
+        }
+
+        private void WyswietlMinutnik()
+        {
+            timeToAlarmLabel.Text = time.ToString();
         }
     }
 }
